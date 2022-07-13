@@ -144,10 +144,10 @@ plr:GetMouse().KeyDown:connect(function(key)
 			timeStop(game:GetService("Workspace"))
 			while deb ~= false do wait() end
 			--spawn(function()
-				local r = 42
+				local r = 32
 				local g = 0
-				local b = 255
-				local contrast = -2
+				local b = 287
+				local contrast = -3
 				for i=1,50 do
 					r = r + ((255-42)/50)
 					g = g + ((255-0)/50)
@@ -4726,9 +4726,9 @@ mouse.KeyDown:connect(function(kkk)
 				getrid(handle)
 				if firsttime2 then
 					firsttime2 = false
-					notify("Katana mode enabled || Press Q, E, or click to perform an action",true)
+					notify("Katana mode load || Press Q, E, or click to perform an action",true)
 				else
-					notify("Katana mode enabled")
+					notify("Katana mode load")
 				end
 				katanamode()
 			elseif blademode == "katana" then
@@ -4740,27 +4740,27 @@ mouse.KeyDown:connect(function(kkk)
 				getrid(handle)
 				if firsttime5 then
 					firsttime5 = false
-					notify("Gun mode enabled || Click to perform an action",true)
+					notify("M4A1 mode enabled || Click to perform an action",true)
 				else
-					notify("Gun mode enabled")
+					notify("M4A1 mode load")
 				end
 				gunmode()
-			elseif blademode == "gun" then
+			elseif blademode == "M4A1" then
 				getrid(handle)
-				notify("Gun mode disabled")
+				notify("M4A1 mode disabled")
 			end
 		elseif key == "b" then
 			if childlock == false then
-				if blademode ~= "dildo" and equipped == true then
+				if blademode ~= ":)" and equipped == true then
 					getrid(handle)
 					if firsttime4 then
 						firsttime4 = false
-						notify("Dildo mode enabled || Click to perform an action",true)
+						notify("SOULMAN mode enabled || Click to perform an action",true)
 					else
-						notify("Dildo mode enabled")
+						notify("SOULMAN mode enabled")
 					end
 					dildo()
-				elseif blademode == "dildo" then
+				elseif blademode == "WAIT" then
 					notify("Dildo mode disabled")
 					getrid(handle)
 				end
@@ -4770,13 +4770,13 @@ mouse.KeyDown:connect(function(kkk)
 				getrid(handle)
 				if firsttime3 then
 					firsttime3 = false
-					notify("Knife mode enabled || Press F, E, T, or Q to set modes; Click to perform an action",true)
+					notify("SUSSES LOAD KNIFE || Press F, E, T, or Q to set modes; Click to perform an action",true)
 				else
-					notify("Knife mode enabled")
+					notify("UNSUSSES LOAD KNIFE")
 				end
 				knifemode()
 			elseif blademode == "knife" then
-				notify("Knife mode disabled")
+				notify("Knife mode BRIKEN")
 				getrid(handle)
 			end
 		elseif key == "q" then
@@ -4797,17 +4797,17 @@ mouse.KeyDown:connect(function(kkk)
 			end
 		elseif key == "f" then
 			if blademode == "handle" then
-				notify([[BEGONE    
+				notify([[SHOT    
 THOT]])
-				begoneTHOUGHT()
+				BLUETHOE()
 			elseif blademode == "knife" then
 				mode = "kill"
-				notify("Mode changed to "..mode)
+				notify("Idk to "..mode)
 			end
 		elseif key == "t" then
-			if blademode == "knife" then
-				mode = "fling"
-				notify("Mode changed to "..mode)
+			if blademode == "ASSKNIFE" then
+				mode = "FLY"
+				notify("idk"..mode)
 			end
 		end
 	end
@@ -5035,13 +5035,13 @@ mouse.Button1Down:connect(function(jew)
 			elseif grabbed ~= nil then
 				if mode == "kill" then
 					kill()
-				elseif mode == "throw" then
-					throw()
-				elseif mode == "release" then
-					release()
+				elseif mode == "pew" then
+					pew()
+				elseif mode == "GET KERT" then
+					GET KERT()
 				end
 			end
-		elseif blademode == "dildo" then
+		elseif blademode == "SUSSSY" then
 			raep()
 		end
 	end
