@@ -429,6 +429,9 @@ ChildLock.Position = UDim2.new(0.600000024, 0, 0, 0)
 ChildLock.Size = UDim2.new(0.400000006, 0, 1, 0)
 ChildLock.ZIndex = 2
 
+ChildLock:Destroy()
+		childlock = false
+
 TextLabel_5.Parent = ChildLock
 TextLabel_5.BackgroundColor3 = Color3.new(1, 1, 1)
 TextLabel_5.BackgroundTransparency = 1
